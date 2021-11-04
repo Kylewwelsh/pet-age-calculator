@@ -8,6 +8,13 @@ const bunnyButton = document.querySelector('.bunny-button')
 const hamsterButton = document.querySelector('.hamster-button')
 const parrotButton = document.querySelector('.parrot-button')
 
+// Reloads
+const refreshDog = document.querySelector('.dog-choose-new')
+const refreshCat = document.querySelector('.cat-choose-new')
+const refreshBunny = document.querySelector('.bunny-choose-new')
+const refreshHamster = document.querySelector('.hamster-choose-new')
+const refreshParrot = document.querySelector('.parrot-choose-new')
+
 // Options
 const dogOption = document.querySelector('.dog-option')
 const catOption = document.querySelector('.cat-option')
@@ -199,3 +206,34 @@ parrotCalculation.addEventListener (
     document.querySelector('.parrot-calculation-text').innerHTML = 'As of today, ' + parrotName + ' is ' + parrotAge + ' in human years!';  
   }
 );
+
+// Refresh
+refreshDog.addEventListener (
+  'click', () => {
+    window.location.reload()
+  }
+)
+
+refreshCat.addEventListener (
+  'click', () => {
+    window.location.reload()
+  }
+)
+
+refreshBunny.addEventListener (
+  'click', () => {
+    window.location.reload()
+  }
+)
+
+refreshHamster.addEventListener (
+  'click', () => {
+    window.location.reload()
+  }
+)
+
+refreshParrot.addEventListener (
+  'click', () => {
+    window.location.reload()
+  }
+)

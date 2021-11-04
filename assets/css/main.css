@@ -167,3 +167,91 @@ body {
 
   cursor: pointer;
 }
+
+.dog-option {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+  margin: auto;
+
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dog-calculator {
+  display: grid;
+}
+
+.dog-name {
+  margin: 1rem auto 1rem auto;
+
+  border-radius: 2em;
+  border: none;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+
+  height: 3rem;
+  width: 15rem;
+}
+
+.current-dog-age {
+  margin: 1rem auto 1rem auto;
+
+  border-radius: 2em;
+  border: none;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+
+  height: 3rem;
+  width: 5rem;
+}
+
+.dog-submit {
+  height: 3rem;
+  width: 11rem;
+  margin: auto;
+
+  border: none;
+  border-radius: 2em;
+  font-weight: 600;
+
+  font-size: 1rem;
+
+  background-color: rgb(173, 232, 255);
+
+  cursor: pointer;
+}
+
+.dog-choose-new, .cat-choose-new, .bunny-choose-new, .hamster-choose-new, .parrot-choose-new {
+  height: 3rem;
+  width: 11rem;
+  margin: auto;
+
+  border: none;
+  border-radius: 2em;
+  font-weight: 600;
+
+  font-size: 1rem;
+
+  background-color: rgb(255, 173, 173);
+
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
