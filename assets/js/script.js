@@ -80,7 +80,7 @@ bunnyCalculation.addEventListener (
     }
 
     else {
-      bunnyAge = '-'
+      bunnyAge = 'passed average lifespan for animal'
     }
 
     document.querySelector('.bunny-calculation-text').innerHTML = 'As of today, ' + bunnyName + ' is ' + bunnyAge + ' in human years!'; 
@@ -109,9 +109,28 @@ hamsterCalculation.addEventListener (
     }
 
     else {
-      hamsterAge = '-'
+      hamsterAge = 'passed average lifespan for animal'
     }
 
     document.querySelector('.hamster-calculation-text').innerHTML = 'As of today, ' + hamsterName + ' is ' + hamsterAge + ' in human years!'; 
+  }
+);
+
+// Parrot Calculator
+const parrotCalculation = document.querySelector('.parrot-submit');
+
+parrotCalculation.addEventListener (
+  'click', () => {
+    let parrotName = document.querySelector('.parrot-name').value;
+    let currentParrotAge = document.querySelector('.current-parrot-age').value;
+    let parrotAge;
+
+    if (currentParrotAge <= 9) {
+      parrotAge = currentParrotAge * 9
+    } else {
+      parrotAge = 'passed average lifespan for animal'
+    }
+
+    document.querySelector('.parrot-calculation-text').innerHTML = 'As of today, ' + parrotName + ' is ' + parrotAge + ' in human years!';  
   }
 );
