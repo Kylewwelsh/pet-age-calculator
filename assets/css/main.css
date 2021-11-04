@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+
+  background: rgb(95,172,237);
+  background: linear-gradient(90deg, rgba(95,172,237,1) 0%, rgba(123,228,22,1) 50%, rgba(95,172,237,1) 100%);
+
+  display: grid;
+  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-rows: 15vh 70vh 15vh;
+}
+
+.hide {
+  display: none;
+}
+
+.main-section {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+  margin: auto;
+
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.begin-button {
+  height: 4rem;
+  width: 12rem;
+
+  border: none;
+  border-radius: 2em;
+  text-decoration: none;
+
+  font-size: 2.25rem;
+
+  background-color: rgb(173, 232, 255);
+}
+
+.begin-button:hover {
+  transition-duration: 0.35s;
+  transform: scale(1.1);
+  cursor: pointer;
+}

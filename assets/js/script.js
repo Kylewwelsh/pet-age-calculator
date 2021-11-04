@@ -1,3 +1,21 @@
+// Const
+const mainSection = document.querySelector('.main-section')
+const begin = document.querySelector('.begin-button')
+const petSelection = document.querySelector('.pet-selection')
+const dogButton = document.querySelector('.dog-button')
+const catButton = document.querySelector('.cat-button')
+const bunnyButton = document.querySelector('.bunny-button')
+const hamsterButton = document.querySelector('.hamster-button')
+const parrotButton = document.querySelector('.parrot-button')
+
+// Begin
+begin.addEventListener (
+  'click', () => {
+    mainSection.classList.add('hide')
+    petSelection.classList.remove('hide')
+  }
+)
+
 // Dog Calculator
 const dogCalculation = document.querySelector('.dog-submit');
 
