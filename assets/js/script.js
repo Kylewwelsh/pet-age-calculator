@@ -8,11 +8,58 @@ const bunnyButton = document.querySelector('.bunny-button')
 const hamsterButton = document.querySelector('.hamster-button')
 const parrotButton = document.querySelector('.parrot-button')
 
+// Options
+const dogOption = document.querySelector('.dog-option')
+const catOption = document.querySelector('.cat-option')
+const bunnyOption = document.querySelector('.bunny-option')
+const hamsterOption = document.querySelector('.hamster-option')
+const parrotOption = document.querySelector('.parrot-option')
+
 // Begin
 begin.addEventListener (
   'click', () => {
     mainSection.classList.add('hide')
     petSelection.classList.remove('hide')
+  }
+)
+
+// Dog Selected
+dogButton.addEventListener (
+  'click', () => {
+    petSelection.classList.add('hide')
+    dogOption.classList.remove('hide')
+  }
+)
+
+// Cat Selected
+catButton.addEventListener (
+  'click', () => {
+    petSelection.classList.add('hide')
+    catOption.classList.remove('hide')
+  }
+)
+
+// Bunny Selected
+bunnyButton.addEventListener (
+  'click', () => {
+    petSelection.classList.add('hide')
+    bunnyOption.classList.remove('hide')
+  }
+)
+
+// Hamster Selected
+hamsterButton.addEventListener (
+  'click', () => {
+    petSelection.classList.add('hide')
+    hamsterOption.classList.remove('hide')
+  }
+)
+
+// Parrot Selection
+parrotButton.addEventListener (
+  'click', () => {
+    petSelection.classList.add('hide')
+    parrotOption.classList.remove('hide')
   }
 )
 
