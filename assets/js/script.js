@@ -86,3 +86,32 @@ bunnyCalculation.addEventListener (
     document.querySelector('.bunny-calculation-text').innerHTML = 'As of today, ' + bunnyName + ' is ' + bunnyAge + ' in human years!'; 
   }
 );
+
+// Hamster Calculation, same as bunny, no concrete formula, only 3 year lifespan can be found
+const hamsterCalculation = document.querySelector('.hamster-submit');
+
+hamsterCalculation.addEventListener (
+  'click', () => {
+    let hamsterName = document.querySelector('.hamster-name').value;
+    let currentHamsterAge = document.querySelector('.current-hamster-age').value;
+    let hamsterAge;
+
+    if (currentHamsterAge == 1) {
+      hamsterAge = 58
+    }
+
+    else if (currentHamsterAge == 2) {
+      hamsterAge = 70
+    }
+
+    else if (currentHamsterAge == 3) {
+      hamsterAge = 100
+    }
+
+    else {
+      hamsterAge = '-'
+    }
+
+    document.querySelector('.hamster-calculation-text').innerHTML = 'As of today, ' + hamsterName + ' is ' + hamsterAge + ' in human years!'; 
+  }
+);
